@@ -1,0 +1,381 @@
+# ██╗   ██╗ █████╗ ██████╗ ██╗ █████╗ ██████╗ ██╗     ███████╗███████╗
+# ██║   ██║██╔══██╗██╔══██╗██║██╔══██╗██╔══██╗██║     ██╔════╝██╔════╝
+# ██║   ██║███████║██████╔╝██║███████║██████╔╝██║     █████╗  ███████╗
+# ╚██╗ ██╔╝██╔══██║██╔══██╗██║██╔══██║██╔══██╗██║     ██╔══╝  ╚════██║
+#  ╚████╔╝ ██║  ██║██║  ██║██║██║  ██║██████╔╝███████╗███████╗███████║
+#   ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝
+
+# Colors
+define: &COLOR_MAIN '#8a80ee'
+define: &COLOR_MAIN_DARK '#615aa7'
+define: &COLOR_INACTIVE '#9f9dba'
+define: &WHITE '#fefefe'
+define: &BAR_BACKGROUND '#000000D6'
+
+# Font & Sizes
+define: &FONT_FAMILY 'Cascadia Code'
+define: &WORKSPACE_FONT_SIZE '12px'
+define: &GAP_SIZE '6px'
+define: &FLOATING_WINDOW_AMOUNT '100%'
+define: &RESIZE_WINDOW_AMOUNT '12.5%'
+
+# Bar Configuration
+define: &BAR_HEIGHT '26px'
+define: &BAR_OPACITY '1.0'
+define: &BAR_FONT_SIZE '12px'
+define: &BAR_PADDING '0 12px'
+define: &DATE_FORMAT 'd MMMM HH:mm:ss'
+
+# Network & System Usage Labels
+define: &LOCAL_IP_TEXT '192.168.178.64'
+define: &USAGE_TEXT '{percent_usage}%'
+define: &VOLUME_NO_ICON '{volume_level}%'
+define: &SONG_LABEL '{song_title} - {artist_name}  |  '
+define: &SEPERATOR_TEXT  '  |  '
+define: &COMPONENT_REFRESH_INTERVAL '1000'
+
+# Images
+define: &IMG_1 'C:\\Users\\akkiirah\\.glaze-wm\\images\\1.png'
+define: &IMG_2 'C:\\Users\\akkiirah\\.glaze-wm\\images\\2.png'
+define: &IMG_3 'C:\\Users\\akkiirah\\.glaze-wm\\images\\3.png'
+define: &IMG_4 'C:\\Users\\akkiirah\\.glaze-wm\\images\\4.png'
+define: &IMAGE_MARGIN '6px 3px 0 0'
+
+# Window Management Rules
+define: &MV_WorkSpace_1 '(BlackDesert64|BlackDesertPatcher32.pae)'
+define: &MV_WorkSpace_2 '(Notion)'
+define: &MV_WorkSpace_3 '(steamwebhelper|EADesktop)'
+define: &MV_WorkSpace_4 '(Spotify)'
+define: &MV_WorkSpace_8 '(Discord)'
+define: &MV_WorkSpace_9 '(librewolf)'
+
+define: &RS_GAP '(steamwebhelper|EADesktop|LauncherPatcher|Photoshop)'
+define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|osu!|ForzaHorizon5|GTA5)'
+define: &SET_FLOAT '(KeePassXC|Higurashi_When_They_Cry-Hashiru)'
+define: &SET_MIN '(unlockfps)'
+
+
+
+#███████╗███████╗████████╗████████╗██╗███╗   ██╗ ██████╗ ███████╗
+#██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝
+#███████╗█████╗     ██║      ██║   ██║██╔██╗ ██║██║  ███╗███████╗
+#╚════██║██╔══╝     ██║      ██║   ██║██║╚██╗██║██║   ██║╚════██║
+#███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║
+#╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+
+# General Settings
+gaps:
+  inner_gap: *GAP_SIZE
+  outer_gap: *GAP_SIZE
+
+general:
+  focus_follows_cursor: true
+  cursor_follows_focus: true
+  center_new_floating_windows: true
+  show_floating_on_top: true
+  floating_window_move_amount: *FLOATING_WINDOW_AMOUNT
+  toggle_workspace_on_refocus: true
+  window_animations: false
+
+focus_borders:
+  active:
+    enabled: true
+    color: *COLOR_MAIN
+
+  inactive:
+    enabled: true
+    color: *COLOR_INACTIVE
+
+# Bar Settings
+bar:
+  height: *BAR_HEIGHT
+  position: 'top'
+  opacity: *BAR_OPACITY
+  background: *BAR_BACKGROUND
+  foreground: *WHITE
+  font_family: *FONT_FAMILY
+  font_size: *BAR_FONT_SIZE
+  font_weight: '400'
+  padding: *BAR_PADDING
+  offset_x: *GAP_SIZE
+  offset_y: *GAP_SIZE
+
+  components_left:
+    - type: 'image'
+      source: *IMG_1
+      margin: *IMAGE_MARGIN
+    - type: 'image'
+      source: *IMG_2
+      margin: *IMAGE_MARGIN
+    - type: 'image'
+      source: *IMG_3
+      margin: *IMAGE_MARGIN
+    - type: 'image'
+      source: *IMG_4
+      margin: *IMAGE_MARGIN
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+  
+    - type: 'workspaces'
+      focused_workspace_background: *COLOR_MAIN_DARK
+      focused_workspace_foreground: *WHITE
+      displayed_workspace_background: 'transparent'
+      displayed_workspace_foreground: *WHITE
+      default_workspace_background: 'transparent'
+      default_workspace_foreground: *WHITE
+      font_family: *FONT_FAMILY
+      font_size: *WORKSPACE_FONT_SIZE
+      padding: '0px'
+
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+    - type: 'music'
+      label_not_playing: ''
+      label_paused: ''
+      label_playing: *SONG_LABEL
+      max_title_length: 20
+      max_artist_length: 20
+    - type: 'window title'
+
+
+  components_right:
+    - type: 'system tray'
+      label_expand_text: ''
+      label_collapse_text: ''
+      padding: '8px 0px'
+
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+
+    - type: 'text'
+      text: 'VOL '
+      foreground: *COLOR_MAIN
+    - type: 'volume'
+      label_low: *VOLUME_NO_ICON
+      label_medium: *VOLUME_NO_ICON
+      label_high: *VOLUME_NO_ICON
+      label_mute: *VOLUME_NO_ICON
+
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+
+    - type: 'text'
+      text: 'CPU '
+      foreground: *COLOR_MAIN
+    - type: 'cpu'
+      label: *USAGE_TEXT
+      refresh_interval_ms: *COMPONENT_REFRESH_INTERVAL
+
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+
+    - type: 'text'
+      text: 'GPU '
+      foreground: *COLOR_MAIN
+    - type: 'gpu'
+      label: *USAGE_TEXT
+      refresh_interval_ms: *COMPONENT_REFRESH_INTERVAL
+
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+
+    - type: 'text'
+      text: 'RAM '
+      foreground: *COLOR_MAIN
+    - type: 'memory'
+      label: *USAGE_TEXT
+      refresh_interval_ms: *COMPONENT_REFRESH_INTERVAL
+
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+
+    - type: 'text'
+      text: 'eth0 '
+      foreground: *COLOR_MAIN
+    - type: 'text'
+      text: *LOCAL_IP_TEXT
+
+    - type: 'text'
+      text: *SEPERATOR_TEXT
+
+    - type: 'clock'
+      time_formatting: *DATE_FORMAT
+
+
+# Workspaces
+workspaces:
+  - name: '1'
+    bind_to_monitor: 1
+    keep_alive: true
+
+  - name: '8'
+    display_name: 'Discord'
+    bind_to_monitor: 2
+    keep_alive: true
+
+  - name: '9'
+    display_name: 'LibreWolf'
+    bind_to_monitor: 3
+    keep_alive: true
+
+  - name: '2'    
+    bind_to_monitor: 1
+    keep_alive: true
+
+  - name: '3'
+    bind_to_monitor: 1
+    keep_alive: true
+
+  - name: '4'
+    bind_to_monitor: 1
+    keep_alive: true
+
+  - name: '5'
+    bind_to_monitor: 1
+    keep_alive: true
+
+  - name: '6'
+    bind_to_monitor: 1
+
+  - name: '7'
+    bind_to_monitor: 1
+
+
+# Window Rules
+window_rules:
+
+  - command: 'resize borders 0px -6px -6px -6px'
+    match_process_name: *RS_GAP
+
+  - command: 'resize borders 0px -2px -2px -2px'
+    match_process_name: 'librewolf'
+
+  - command: 'move to workspace 1'
+    match_process_name: *MV_WorkSpace_1
+
+  - command: 'move to workspace 2'
+    match_process_name: *MV_WorkSpace_2
+
+  - command: 'move to workspace 3'
+    match_process_name: *MV_WorkSpace_3
+    
+  - command: 'move to workspace 4'
+    match_process_name: *MV_WorkSpace_4
+
+  - command: 'move to workspace 8'
+    match_process_name: *MV_WorkSpace_8
+
+  - command: 'move to workspace 9'
+    match_process_name: *MV_WorkSpace_9
+    
+  - command: 'set tiling'
+    match_process_name: *SET_TILE
+    
+  - command: 'set floating'
+    match_process_name: *SET_FLOAT
+
+  - command: 'set minimized'
+    match_process_name: *SET_MIN
+
+
+# ██╗  ██╗███████╗██╗   ██╗██████╗ ██╗███╗   ██╗██████╗ ███████╗
+# ██║ ██╔╝██╔════╝╚██╗ ██╔╝██╔══██╗██║████╗  ██║██╔══██╗██╔════╝
+# █████╔╝ █████╗   ╚████╔╝ ██████╔╝██║██╔██╗ ██║██║  ██║███████╗
+# ██╔═██╗ ██╔══╝    ╚██╔╝  ██╔══██╗██║██║╚██╗██║██║  ██║╚════██║
+# ██║  ██╗███████╗   ██║   ██████╔╝██║██║ ╚████║██████╔╝███████║
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝
+
+keybindings:
+  # Focus in a given direction.
+  - command: 'focus left'
+    binding: 'Alt+Left'
+  - command: 'focus right'
+    binding: 'Alt+Right'
+  - command: 'focus up'
+    binding: 'Alt+Up'
+  - command: 'focus down'
+    binding: 'Alt+Down'
+
+  # Move focused window in a given direction.
+  - command: 'move left'
+    binding: 'Alt+Shift+Left'
+  - command: 'move right'
+    binding: 'Alt+Shift+Right'
+  - command: 'move up'
+    binding: 'Alt+Shift+Up'
+  - command: 'move down'
+    binding: 'Alt+Shift+Down'
+
+  # Change focus to a workspace defined in `workspaces` config.'
+  - command: 'focus workspace 1'
+    binding: 'Alt+1'
+  - command: 'focus workspace 2'
+    binding: 'Alt+2'
+  - command: 'focus workspace 3'
+    binding: 'Alt+3'
+  - command: 'focus workspace 4'
+    binding: 'Alt+4'
+  - command: 'focus workspace 5'
+    binding: 'Alt+5'
+  - command: 'focus workspace 6'
+    binding: 'Alt+6'
+  - command: 'focus workspace 7'
+    binding: 'Alt+7'
+
+  # Move focused window to a workspace defined in `workspaces` config.
+  - commands: ['move to workspace 1']
+    binding: 'Alt+Shift+1'
+  - commands: ['move to workspace 2']
+    binding: 'Alt+Shift+2'
+  - commands: ['move to workspace 3']
+    binding: 'Alt+Shift+3'
+  - commands: ['move to workspace 4']
+    binding: 'Alt+Shift+4'
+  - commands: ['move to workspace 5']
+    binding: 'Alt+Shift+5'
+  - commands: ['move to workspace 6']
+    binding: 'Alt+Shift+6'
+  - commands: ['move to workspace 7']
+    binding: 'Alt+Shift+7'
+
+  # Resize focused window by a percentage or pixel amount.
+  - command: 'resize width -12.5%'
+    binding: 'Alt+Control+Right'
+  - command: 'resize width +12.5%'
+    binding: 'Alt+Control+Left'
+  - command: 'resize height +12.5%'
+    binding: 'Alt+Control+Down'
+  - command: 'resize height -12.5%'
+    binding: 'Alt+Control+Up'
+
+  # Change the tiling direction.
+  - command: 'tiling direction toggle'
+    binding: 'Alt+R'
+
+  # Change the focused window to be floating / tiling.
+  - command: 'toggle floating'
+    binding: 'Alt+Space'
+
+  # Toggle focused window to be maximized / unmaximized.
+  - command: 'toggle maximized'
+    binding: 'Alt+F'
+
+  # Minimize focused window.
+  - command: 'set minimized'
+    binding: 'Alt+M'
+
+  # Close focused window.
+  - command: 'close'
+    binding: 'Alt+Shift+Q'
+
+  # Re-evaluate configuration file.
+  - command: 'reload config'
+    binding: 'Alt+Shift+R' 
+
+  # Launch gitBash
+  - command: 'exec %ProgramFiles%/Git/git-bash.exe'
+    binding: 'Alt+Shift+Enter'
+    
+  # Launch Windows Explorer
+  - command: 'exec explorer'
+    binding: 'Alt+E'
