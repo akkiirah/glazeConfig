@@ -4,9 +4,10 @@
 
 
 ## ToDo:
-Changing to LWin someday.
-Finding a way to toggle current / latest workspace via Alt + Tab.
+- Changing to LWin someday.
+- Finding a way to toggle current / latest workspace via Alt + Tab.
 
 # Credits:
 - [autotiling script](https://github.com/cigh033/GlazeWM-autotiling-python)
+- [glaalt, an alternative autotiling script](https://github.com/ParasiteDelta/GlaAlt) 
 - [some ideas from warden's config](https://github.com/warden7383/glazeConfig/tree/master) 
