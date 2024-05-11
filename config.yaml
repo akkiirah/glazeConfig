@@ -244,7 +244,7 @@ workspaces:
 # Window Rules
 window_rules:
 
-  - command: 'resize borders 0px -6px -6px -6px'
+  - command: 'resize borders 0px -7px -5px -7px'
     match_process_name: *RS_GAP
 
   - command: 'resize borders 0px -2px -2px -2px'
@@ -323,19 +323,19 @@ keybindings:
     binding: 'Alt+7'
 
   # Move focused window to a workspace defined in `workspaces` config.
-  - commands: ['move to workspace 1']
+  - commands: ['move to workspace 1', 'focus workspace 1']
     binding: 'Alt+Shift+1'
-  - commands: ['move to workspace 2']
+  - commands: ['move to workspace 2', 'focus workspace 2']
     binding: 'Alt+Shift+2'
-  - commands: ['move to workspace 3']
+  - commands: ['move to workspace 3', 'focus workspace 3']
     binding: 'Alt+Shift+3'
-  - commands: ['move to workspace 4']
+  - commands: ['move to workspace 4', 'focus workspace 4']
     binding: 'Alt+Shift+4'
-  - commands: ['move to workspace 5']
+  - commands: ['move to workspace 5', 'focus workspace 5']
     binding: 'Alt+Shift+5'
-  - commands: ['move to workspace 6']
+  - commands: ['move to workspace 6', 'focus workspace 6']
     binding: 'Alt+Shift+6'
-  - commands: ['move to workspace 7']
+  - commands: ['move to workspace 7', 'focus workspace 7']
     binding: 'Alt+Shift+7'
 
   # Resize focused window by a percentage or pixel amount.
@@ -373,7 +373,7 @@ keybindings:
     binding: 'Alt+Shift+R' 
 
   # Launch gitBash
-  - command: 'exec %ProgramFiles%/Git/git-bash.exe'
+  - command: 'exec powershell.exe'
     binding: 'Alt+Shift+Enter'
     
   # Launch Windows Explorer
