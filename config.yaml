@@ -46,12 +46,13 @@ define: &MV_WorkSpace_1 '(BlackDesert64|BlackDesertPatcher32.pae)'
 define: &MV_WorkSpace_2 '(Notion)'
 define: &MV_WorkSpace_3 '(steamwebhelper|EADesktop)'
 define: &MV_WorkSpace_4 '(Spotify)'
-define: &MV_WorkSpace_8 '(Discord)'
+define: &MV_WorkSpace_8 '(DiscordPTB)'
 define: &MV_WorkSpace_9 '(librewolf)'
 
 define: &RS_GAP '(steamwebhelper|EADesktop|LauncherPatcher|Photoshop)'
 define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|osu!|ForzaHorizon5|GTA5)'
-define: &SET_FLOAT '(KeePassXC|Higurashi_When_They_Cry-Hashiru)'
+define: &SET_FLOAT '(KeePassXC|Higurashi_When_They_Cry-Hashiru|Taskmgr)'
+define: &SET_FLOAT_UWP '(Rechner)' # For Universal Windows Apps. You may have to change this, since these are the german titles.
 define: &SET_MIN '(unlockfps|glaalt)'
 
 
@@ -274,6 +275,10 @@ window_rules:
   - command: 'set floating'
     match_process_name: *SET_FLOAT
 
+  - command: 'set floating'
+    match_process_name: "ApplicationFrameHost"
+    match_title: *SET_FLOAT_UWP
+
   - command: 'set minimized'
     match_process_name: *SET_MIN
 
@@ -323,19 +328,19 @@ keybindings:
     binding: 'Alt+7'
 
   # Move focused window to a workspace defined in `workspaces` config.
-  - commands: ['move to workspace 1', 'focus workspace 1']
+  - command: 'move to workspace 1'
     binding: 'Alt+Shift+1'
-  - commands: ['move to workspace 2', 'focus workspace 2']
+  - command: 'move to workspace 2'
     binding: 'Alt+Shift+2'
-  - commands: ['move to workspace 3', 'focus workspace 3']
+  - command: 'move to workspace 3'
     binding: 'Alt+Shift+3'
-  - commands: ['move to workspace 4', 'focus workspace 4']
+  - command: 'move to workspace 4'
     binding: 'Alt+Shift+4'
-  - commands: ['move to workspace 5', 'focus workspace 5']
+  - command: 'move to workspace 5'
     binding: 'Alt+Shift+5'
-  - commands: ['move to workspace 6', 'focus workspace 6']
+  - command: 'move to workspace 6'
     binding: 'Alt+Shift+6'
-  - commands: ['move to workspace 7', 'focus workspace 7']
+  - command: 'move to workspace 7'
     binding: 'Alt+Shift+7'
 
   # Resize focused window by a percentage or pixel amount.
@@ -379,3 +384,7 @@ keybindings:
   # Launch Windows Explorer
   - command: 'exec explorer'
     binding: 'Alt+E'
+
+  # Launch Taskmanager
+  - command: 'exec Taskmgr'
+    binding: 'Alt+Escape'
