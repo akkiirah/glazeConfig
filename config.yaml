@@ -10,7 +10,7 @@ define: &COLOR_MAIN '#8a80ee'
 define: &COLOR_MAIN_DARK '#615aa7'
 define: &COLOR_INACTIVE '#9f9dba'
 define: &WHITE '#fefefe'
-define: &BAR_BACKGROUND '#000000D6'
+define: &BAR_BACKGROUND '#131313D9'
 
 # Font & Sizes
 define: &FONT_FAMILY 'Cascadia Code'
@@ -44,7 +44,7 @@ define: &IMAGE_MARGIN '6px 3px 0 0'
 # Window Management Rules
 define: &MV_WorkSpace_1 '(BlackDesert64|BlackDesertPatcher32.pae)'
 define: &MV_WorkSpace_2 '(Notion)'
-define: &MV_WorkSpace_3 '(steamwebhelper|EADesktop)'
+define: &MV_WorkSpace_3 '(steamwebhelper|EADesktop|glaalt)'
 define: &MV_WorkSpace_4 '(Spotify)'
 define: &MV_WorkSpace_8 '(DiscordPTB)'
 define: &MV_WorkSpace_9 '(librewolf)'
@@ -72,7 +72,7 @@ gaps:
 general:
   focus_follows_cursor: true
   cursor_follows_focus: true
-  center_new_floating_windows: true
+  center_new_floating_windows: false
   show_floating_on_top: true
   floating_window_move_amount: *FLOATING_WINDOW_AMOUNT
   toggle_workspace_on_refocus: true
@@ -100,6 +100,10 @@ bar:
   padding: *BAR_PADDING
   offset_x: *GAP_SIZE
   offset_y: *GAP_SIZE
+
+  # Not using this, because of colored Text inside bar.
+  # component_separator:
+  #   label: " | "
 
   components_left:
     - type: 'image'
