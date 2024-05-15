@@ -7,8 +7,8 @@
 - Changing to LWin someday.
 - Finding a way to toggle current / latest workspace via Alt + Tab.
 
-- ## How I disabled the titlesbars of Windows
-- [Installation and Information](https://github.com/akkiirah/disable-windows11-titlebars)
+- ## How I disabled the title bars of Windows
+- [Installation and Information](https://github.com/akkiirah/TitlelessWindows)
 
 # Credits:
 - [autotiling script](https://github.com/cigh033/GlazeWM-autotiling-python)
