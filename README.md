@@ -1,7 +1,6 @@
 # akkiirah's glazewm config
 
-![9XQJm5esGL2bffcL9ufxSLgUEBGWEdvb](https://github.com/akkiirah/glazeConfig/assets/46369555/019d176f-fec7-4b27-9a63-165395730303)
-
+![mydesktop](https://github.com/akkiirah/glazeConfig/assets/46369555/e04e0688-5a81-43cd-b63c-911a0b96ac3a)
 
 ## ToDo:
 - Changing to LWin someday.
