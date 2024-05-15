@@ -15,7 +15,7 @@ define: &BAR_BACKGROUND '#131313D9'
 # Font & Sizes
 define: &FONT_FAMILY 'Cascadia Code'
 define: &WORKSPACE_FONT_SIZE '12px'
-define: &GAP_SIZE '6px'
+define: &GAP_SIZE '10px'
 define: &FLOATING_WINDOW_AMOUNT '100%'
 define: &RESIZE_WINDOW_AMOUNT '12.5%'
 
@@ -249,6 +249,10 @@ workspaces:
 # Window Rules
 window_rules:
 
+  # Fixing gaps when titlebar padding was removed
+  - command: 'resize borders 0px -4px -4px -6px'
+    match_process_name: '.*'
+
   - command: 'resize borders 0px -7px -7px -7px'
     match_process_name: *RS_GAP
 
@@ -371,7 +375,7 @@ keybindings:
 
   # Minimize focused window.
   - command: 'set minimized'
-    binding: 'Alt+M'
+    binding: 'Alt+Shift+M'
 
   # Close focused window.
   - command: 'close'
@@ -392,3 +396,7 @@ keybindings:
   # Launch Taskmanager
   - command: 'exec Taskmgr'
     binding: 'Alt+Escape'
+
+  # Launch Taskmanager
+  - command: 'exec C:\Users\akkiirah\.glaze-wm\scripts\DeleteTitlebar.bat'
+    binding: 'Alt+Ctrl+Space'
