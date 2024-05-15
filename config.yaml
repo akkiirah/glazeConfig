@@ -250,7 +250,7 @@ workspaces:
 window_rules:
 
   # Fixing gaps when titlebar padding was removed
-  - command: 'resize borders 0px -4px -4px -6px'
+  - command: 'resize borders 0px -6px -6px -6px'
     match_process_name: '.*'
 
   - command: 'resize borders 0px -7px -7px -7px'
@@ -397,6 +397,6 @@ keybindings:
   - command: 'exec Taskmgr'
     binding: 'Alt+Escape'
 
-  # Launch Taskmanager
-  - command: 'exec C:\Users\akkiirah\.glaze-wm\scripts\DeleteTitlebar.bat'
-    binding: 'Alt+Ctrl+Space'
+  # Launch RunDeleteTitlebar.lnk to hide cmd 
+  - command: 'exec C:\Users\akkiirah\.glaze-wm\scripts\RunDeleteTitlebar'
+    binding: 'Alt+Ctrl+Space' 

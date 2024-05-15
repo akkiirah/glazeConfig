@@ -12,7 +12,7 @@ public static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 [return: MarshalAs(UnmanagedType.Bool)]
 public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
 
-public const int GWL_STYLE = -16;
+public const int GWL_STYLE = -16; 
 public const int SWP_FRAMECHANGED = 0x0020;
 "@
 
@@ -35,8 +35,8 @@ foreach ($process in $processes) {
         $currentStyle = [Win32Functions.WinAPI]::GetWindowLong($hWnd, [Win32Functions.WinAPI]::GWL_STYLE)
         Write-Host "Current style for $($process.MainWindowTitle): $currentStyle"
 
-        # Define style to cut titlebar
-        $styleToRemove = 0x00C00000 # WS_CAPTION + WS_BORDER
+        # Define style to remove all decorations
+        $styleToRemove = 0x00C00000 -bor 0x00040000
         $newStyle = $currentStyle -band (-bnot $styleToRemove)
         Write-Host "New style for $($process.MainWindowTitle): $newStyle"
 
