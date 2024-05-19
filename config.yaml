@@ -50,8 +50,8 @@ define: &MV_WorkSpace_4 '(Spotify)'
 define: &MV_WorkSpace_8 '(DiscordPTB)'
 define: &MV_WorkSpace_9 '(librewolf)'
 
-define: &RS_GAP '(steamwebhelper|EADesktop|LauncherPatcher|Photoshop|alacritty)' 
-define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|osu!|ForzaHorizon5|GTA5|HigurashiEp\d+)'
+define: &RS_GAP '(steamwebhelper|EADesktop|LauncherPatcher|Photoshop|alacritty|librewolf)' 
+define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|osu!|ForzaHorizon5|GTA5|HigurashiEp\d+|explorer|DiscordPTB|librewolf|BlackDesert64)'
 define: &SET_FLOAT '(KeePassXC|Higurashi_When_They_Cry-Hashiru|Taskmgr)'
 define: &SET_FLOAT_UWP '(Rechner)' # For Universal Windows Apps. You may have to change this, since these are the german titles.
 
@@ -78,7 +78,7 @@ general:
   show_floating_on_top: true
   floating_window_move_amount: *FLOATING_WINDOW_AMOUNT
   toggle_workspace_on_refocus: true
-  window_animations: false
+  window_animations: "unchanged"
 
 focus_borders:
   active:
@@ -100,8 +100,8 @@ bar:
   font_size: *BAR_FONT_SIZE
   font_weight: '400'
   padding: *BAR_PADDING
-  offset_x: *GAP_SIZE
-  offset_y: *GAP_SIZE
+  # offset_x: *GAP_SIZE
+  # offset_y: *GAP_SIZE
 
   # Not using this, because of colored Text inside bar.
   # component_separator:
@@ -255,11 +255,8 @@ window_rules:
   - command: 'resize borders 0px -7px -7px -7px'
     match_process_name: '.*'
 
-  - command: 'resize borders 0px -7px -7px -7px'
+  - command: 'resize borders 0px -9px -9px -9px'
     match_process_name: *RS_GAP
-
-  - command: 'resize borders 0px -2px -2px -2px'
-    match_process_name: 'librewolf'
 
   - command: 'move to workspace 1'
     match_process_name: "ApplicationFrameHost"
