@@ -10,20 +10,20 @@ define: &COLOR_MAIN '#8a80ee'
 define: &COLOR_MAIN_DARK '#615aa7'
 define: &COLOR_INACTIVE '#9f9dba'
 define: &WHITE '#fefefe'
-define: &BAR_BACKGROUND '#131313D9'
+define: &BAR_BACKGROUND '#1313135E'
 
 # Font & Sizes
 define: &FONT_FAMILY 'Cascadia Code'
 define: &WORKSPACE_FONT_SIZE '12px'
-define: &GAP_SIZE '6px'
-define: &FLOATING_WINDOW_AMOUNT '100%'
+define: &GAP_SIZE '10px'
+define: &FLOATING_WINDOW_AMOUNT '24px'
 define: &RESIZE_WINDOW_AMOUNT '12.5%'
 
 # Bar Configuration
 define: &BAR_HEIGHT '26px'
 define: &BAR_OPACITY '1.0'
 define: &BAR_FONT_SIZE '12px'
-define: &BAR_PADDING '0 12px'
+define: &BAR_PADDING '0 6px'
 define: &DATE_FORMAT 'd MMMM HH:mm:ss'
 
 # Network & System Usage Labels
@@ -45,13 +45,13 @@ define: &IMAGE_MARGIN '6px 3px 0 0'
 define: &MV_WorkSpace_1_UWP '(Medienwiedergabe)' # For Universal Windows Apps. You may have to change this, since these are the german titles.
 define: &MV_WorkSpace_1 '(BlackDesert64|BlackDesertPatcher32.pae)'
 define: &MV_WorkSpace_2 '(Notion)'
-define: &MV_WorkSpace_3 '(steamwebhelper|EADesktop|glaalt)'
+define: &MV_WorkSpace_3 '(steamwebhelper|EADesktop|glaalt|unlockfps)'
 define: &MV_WorkSpace_4 '(Spotify)'
 define: &MV_WorkSpace_8 '(DiscordPTB)'
 define: &MV_WorkSpace_9 '(librewolf)'
 
-define: &RS_GAP '(steamwebhelper|EADesktop|LauncherPatcher|Photoshop|alacritty|librewolf)' 
-define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|osu!|ForzaHorizon5|GTA5|HigurashiEp\d+|explorer|DiscordPTB|librewolf|BlackDesert64)'
+define: &RS_GAP '(EADesktop|LauncherPatcher)' 
+define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|osu!|ForzaHorizon5|GTA5|HigurashiEp\d+|explorer|DiscordPTB|librewolf|BlackDesert64|Client-Win64-Shipping|VSCodium)'
 define: &SET_FLOAT '(KeePassXC|Higurashi_When_They_Cry-Hashiru|Taskmgr)'
 define: &SET_FLOAT_UWP '(Rechner)' # For Universal Windows Apps. You may have to change this, since these are the german titles.
 
@@ -69,7 +69,7 @@ define: &SET_MIN '(unlockfps|glaalt)'
 # General Settings
 gaps:
   inner_gap: *GAP_SIZE
-  outer_gap: *GAP_SIZE
+  outer_gap: *GAP_SIZE 
 
 general:
   focus_follows_cursor: true
@@ -100,28 +100,31 @@ bar:
   font_size: *BAR_FONT_SIZE
   font_weight: '400'
   padding: *BAR_PADDING
-  # offset_x: *GAP_SIZE
-  # offset_y: *GAP_SIZE
+  border_radius: '4px'
+  offset_x: '3px'
+  offset_y: '3px'
+  border_width: '1px'
+  border_color: *COLOR_MAIN_DARK
 
   # Not using this, because of colored Text inside bar.
   # component_separator:
   #   label: " | "
 
   components_left:
-    - type: 'image'
-      source: *IMG_1
-      margin: *IMAGE_MARGIN
-    - type: 'image'
-      source: *IMG_2
-      margin: *IMAGE_MARGIN
-    - type: 'image'
-      source: *IMG_3
-      margin: *IMAGE_MARGIN
-    - type: 'image'
-      source: *IMG_4
-      margin: *IMAGE_MARGIN
-    - type: 'text'
-      text: *SEPERATOR_TEXT
+    # - type: 'image'
+    #   source: *IMG_1
+    #   margin: *IMAGE_MARGIN
+    # - type: 'image'
+    #   source: *IMG_2
+    #   margin: *IMAGE_MARGIN
+    # - type: 'image'
+    #   source: *IMG_3
+    #   margin: *IMAGE_MARGIN
+    # - type: 'image'
+    #   source: *IMG_4
+    #   margin: *IMAGE_MARGIN
+    # - type: 'text'
+    #   text: *SEPERATOR_TEXT
   
     - type: 'workspaces'
       focused_workspace_background: *COLOR_MAIN_DARK
@@ -255,7 +258,7 @@ window_rules:
   - command: 'resize borders 0px -7px -7px -7px'
     match_process_name: '.*'
 
-  - command: 'resize borders 0px -9px -9px -9px'
+  - command: 'resize borders 0px -13px -13px -13px'
     match_process_name: *RS_GAP
 
   - command: 'move to workspace 1'
