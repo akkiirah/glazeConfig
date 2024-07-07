@@ -37,7 +37,7 @@ $styleToRemove = 0x00C00000 -bor 0x00040000
 $scriptDirectory = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 # Read the list of process names from the text file
-$excludedProcessesPath = Join-Path -Path $scriptDirectory -ChildPath "excluded_processes.txt"
+$excludedProcessesPath = Join-Path -Path $scriptDirectory -ChildPath "ExcludedProcesses.txt"
 $excludedProcesses = Get-Content -Path $excludedProcessesPath
 Write-Host "Excluded Processes:" $excludedProcesses
 
