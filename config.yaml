@@ -51,7 +51,7 @@ define: &MV_WorkSpace_8 '(DiscordPTB)'
 define: &MV_WorkSpace_9 '(librewolf)'
 
 define: &RS_GAP '(EADesktop|LauncherPatcher)' 
-define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|osu!|ForzaHorizon5|GTA5|HigurashiEp\d+|explorer|DiscordPTB|librewolf|BlackDesert64|Client-Win64-Shipping|VSCodium)'
+define: &SET_TILE '(SonsOfTheForest|GenshinImpact|bf4|ForzaHorizon5|GTA5|HigurashiEp\d+|explorer|DiscordPTB|librewolf|BlackDesert64|Client-Win64-Shipping|VSCodium)'
 define: &SET_FLOAT '(KeePassXC|Higurashi_When_They_Cry-Hashiru|Taskmgr)'
 define: &SET_FLOAT_UWP '(Rechner)' # For Universal Windows Apps. You may have to change this, since these are the german titles.
 
