@@ -1,0 +1,78 @@
+[2m2024-11-25T18:16:39.412807Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_effects.other_windows: duplicate field `hide_title_bar` at line 74 column 5
+[2m2024-11-25T18:16:48.834528Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_effects.other_windows: duplicate field `hide_title_bar` at line 73 column 5
+[2m2024-11-25T18:16:55.902577Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_effects.other_windows: duplicate field `hide_title_bar` at line 73 column 5
+[2m2024-11-25T18:37:13.301057Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 163 column 7, while parsing a block mapping at line 162 column 5
+[2m2024-11-25T18:37:41.044852Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 163 column 7, while parsing a block mapping at line 162 column 5
+[2m2024-11-25T18:38:16.398221Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 163 column 7, while parsing a block mapping at line 162 column 5
+[2m2024-11-25T19:07:13.253823Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[5].commands: unrecognized subcommand
+ at line 174 column 15
+[2m2024-11-25T19:07:52.211635Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[5].commands: unrecognized subcommand
+ at line 174 column 15
+[2m2024-11-25T19:16:21.116231Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m found unknown escape character at line 176 column 46, while parsing a quoted scalar at line 176 column 34
+[2m2024-11-26T15:43:36.586929Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-11-29T05:51:21.916651Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Ungültiges Handle für den Monitor. (0x800705B5)
+[2m2024-11-29T14:30:43.839197Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-29T14:30:45.093120Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-12-02T22:27:00.451188Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Ungültiges Handle für den Monitor. (0x800705B5)
+[2m2024-12-03T06:20:09.163979Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-12-06T02:57:48.623294Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Ungültiges Handle für den Monitor. (0x800705B5)
+[2m2024-12-06T13:42:29.077134Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-12-06T13:42:30.495823Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-12-10T22:04:21.223808Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-12-16T11:10:11.766289Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-12-20T12:15:48.231090Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-12-25T23:36:14.975016Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to create single instance mutex.
+
+Caused by:
+    Zugriff verweigert (0x80070005)
+[2m2024-12-25T23:36:19.871943Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to create single instance mutex.
+
+Caused by:
+    Zugriff verweigert (0x80070005)
+[2m2024-12-25T23:36:24.408931Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-12-29T12:16:03.335340Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Ungültiges Handle für den Monitor. (0x800705B5)
+[2m2024-12-29T13:54:17.442196Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-12-29T13:54:18.730919Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-12-29T18:56:10.331012Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-12-31T11:52:16.285046Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-02T05:40:36.471444Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-09T05:05:02.981059Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-15T10:07:00.468140Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Ungültiges Handle für den Monitor. (0x800705B5)
+[2m2025-01-15T12:11:16.084466Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-15T12:11:17.716899Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-01-19T15:55:15.272037Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-22T17:17:02.108858Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to create single instance mutex.
+
+Caused by:
+    Zugriff verweigert (0x80070005)
+[2m2025-01-22T17:48:48.810411Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-01-27T15:16:32.635054Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to create single instance mutex.
+
+Caused by:
+    Zugriff verweigert (0x80070005)
+[2m2025-01-27T15:16:39.478825Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to create single instance mutex.
+
+Caused by:
+    Zugriff verweigert (0x80070005)
+[2m2025-01-27T15:16:45.982515Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-02-15T17:04:23.681975Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-02-21T05:52:15.706546Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-02-24T09:55:45.825701Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-02-25T11:15:19.607119Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-02-26T09:35:05.035404Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-02T18:50:20.528644Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:04.147489Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:05.565100Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:07.356851Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:07.889058Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:08.231886Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:08.372158Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:08.489189Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:08.571359Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:08.677649Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:08.779601Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:08.892308Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:09.174062Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:09.316517Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:09.427197Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-02T19:59:09.920535Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed

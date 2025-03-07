@@ -1,2 +1,4 @@
 rider64
 taskmgr
+zed
+zebar
