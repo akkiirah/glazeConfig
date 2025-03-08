@@ -1,13 +1,41 @@
-/**
- * Import the Nerdfonts icon font.
- * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
- */
 @import 'https://www.nerdfonts.com/assets/css/webfont.css';
 
+:root {
+    /* Colors */
+    --color-text: #a6adc8;
+    --color-label: #cba6f7;
+    --bg-root: #1819262f;
+    --bg-workspace: #181926;
+    --bg-workspace-focused: #24273a;
+    --mid-usage: #f9e2af;
+    --high-usage: #f38ba8;
+
+    /* Fonts */
+    --font-family: 'Consolas', monospace;
+    --font-size: 0.8rem;
+
+    /* Spacing */
+    --margin-label: 0.5rem;
+    --margin-container: 1rem;
+    --workspace-margin-right: .25rem;
+    --workspace-padding: .125rem .375rem;
+    --workspace-padding-right: .375rem;
+    --workspace-border-width: .125rem;
+    --app-padding: .25rem 1rem;
+}
+
+.mid {
+    color: var(--mid-usage);
+}
+
+.high {
+    color: var(--high-usage);
+}
+
 body {
-    color: #b7bef8ab;
-    font-family: 'Consolas';
-    font-size: .8rem;
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
 }
 
 html,
@@ -17,67 +45,35 @@ body,
 }
 
 #root {
-    background: #1819262f;
-    backdrop-filter: blur(5px);
+    background: var(--bg-root);
+    backdrop-filter: blur(.375rem);
     position: relative;
 }
 
 .app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr 1fr;
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 4px 10px;
-    backdrop-filter: blur(10px);
+    padding: var(--app-padding);
+    backdrop-filter: blur(.75rem);
 }
 
 .left,
-.center,
 .right {
     display: flex;
     align-items: center;
-}
-
-.center {
-    justify-self: center;
 }
 
 .right {
     justify-self: end;
 }
 
-.logo,
-.binding-mode,
-.tiling-direction,
-.memory,
-.battery,
-.weather {
-    margin-right: 20px;
-}
-
 .network,
 .cpu,
-.time {
-    margin-right: 15px;
-}
-
-.label {
-    color: #ed87969f;
-}
-
-.weather {
-    display: flex;
-    margin-top: 3px;
-}
-
-.weather>.nf,
-.nerd-font,
-.nerd-fonts {
-    line-height: 16.4px;
-    font-size: 18px;
-    font-weight: 100 !important;
-    color: rgb(255 255 255 / 90%);
+.memory {
+    margin-right: var(--margin-container);
 }
 
 .memory,
@@ -89,77 +85,50 @@ body,
 .fixed-container {
     display: flex;
     justify-content: space-between;
-    width: 52px;
-    /* Set a fixed width to avoid shifting */
+    width: fit-content;
 }
 
 .label {
-    width: 40px;
-    /* Fixed width for the label (CPU, MEM) */
+    color: var(--color-label);
+    width: fit-content;
+    margin-right: var(--margin-label);
 }
 
 .value {
-    width: 60px;
-    /* Fixed width for the value (percentage) */
+    width: fit-content;
     text-align: right;
-    /* Align the percentage to the right */
-}
-
-
-.weather>i {
-    margin-right: 6px;
 }
 
 .workspaces {
     display: flex;
     align-items: center;
     margin-top: -1px;
-    margin-right: .5rem;
+    margin-right: var(--margin-label);
 }
 
 .workspace {
-    background: #181926;
-    margin-right: 4px;
-    padding: 2px 6px;
-    padding-right: 6.4px;
-    color: #b7bef8ab;
-    border: inset 1.7px;
+    background: var(--bg-workspace);
+    margin-right: var(--workspace-margin-right);
+    padding: var(--workspace-padding);
+    padding-right: var(--workspace-padding-right);
+    color: var(--color-text);
+    border: inset var(--workspace-border-width);
     border-color: transparent;
     cursor: pointer;
 
     &.displayed {
-        background: #181926;
+        background: var(--bg-workspace);
     }
 
     &.focused {
-        background: #24273a;
+        background: var(--bg-workspace-focused);
     }
 
     &.focused:hover {
-        background: #181926;
+        background: var(--bg-workspace);
     }
 
     &:hover {
-        background: #24273a;
+        background: var(--bg-workspace-focused);
     }
-}
-
-.binding-mode,
-.tiling-direction {
-    background: rgb(255 255 255 / 15%);
-    color: rgb(255 255 255 / 90%);
-    border-radius: 2px;
-    line-height: 1;
-    padding: 4px 8px;
-    margin-left: 4px;
-    border: 0;
-    cursor: pointer;
-}
-
-.binding-mode {
-    margin-right: 4px;
-}
-
-.cpu .high-usage {
-    color: #B69EFF;
 }

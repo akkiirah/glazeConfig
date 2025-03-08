@@ -76,3 +76,17 @@ Caused by:
 [2m2025-03-02T19:59:09.316517Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-03-02T19:59:09.427197Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
 [2m2025-03-02T19:59:09.920535Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-07T22:59:25.272393Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: one or more required arguments were not provided
+ at line 40 column 5
+[2m2025-03-07T23:00:20.956919Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general.startup_commands: one or more required arguments were not provided
+ at line 40 column 5
+[2m2025-03-07T23:03:22.124006Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-08T00:38:25.194498Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'C:\Users\akkiirah\.glzr\scripts\gat-gwm.exe'.
+
+Error: Der Vorgang wurde durch den Benutzer abgebrochen. (0x800704C7)
+[2m2025-03-08T00:38:54.807509Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'C:\Users\akkiirah\.glzr\scripts\gat-gwm.exe'.
+
+Error: Der Vorgang wurde durch den Benutzer abgebrochen. (0x800704C7)
+[2m2025-03-08T00:40:03.714537Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2025-03-08T00:55:32.887364Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m found unknown escape character at line 11 column 74, while parsing a quoted scalar at line 11 column 33
+[2m2025-03-08T00:55:55.791383Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m found unknown escape character at line 11 column 74, while parsing a quoted scalar at line 11 column 33
