@@ -19,8 +19,9 @@ SET_TILING_REGEX: &SET_TILING_REGEX '.*HigurashiEp.*|.*explorer.*|.*Discord.*|.*
 SET_FULLSCREEN_REGEX: &SET_FULLSCREEN_REGEX '.*BlackDesert64.*'
 
 
-TITLEBAR_SCRIPT_COMMAND: &TITLEBAR_SCRIPT_COMMAND "shell-exec C:\\Users\\akkiirah\\.glzr\\scripts\\DeleteTitlebar.bat"
-GATGWM_COMMAND: &GATGWM_COMMAND "shell-exec C:\\Users\\akkiirah\\.glzr\\scripts\\gat-gwm.exe"
+TITLEBAR_SCRIPT_COMMAND: &TITLEBAR_SCRIPT_COMMAND "shell-exec %USERPROFILE%\\.glzr\\scripts\\DeleteTitlebar.bat"
+GATGWM_COMMAND: &GATGWM_COMMAND "shell-exec %USERPROFILE%\\.glzr\\scripts\\gat-gwm.exe"
+
 
 general:
   startup_commands:

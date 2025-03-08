@@ -1,3 +1,2 @@
-2025/03/08-01:58:13.473 196c Reusing MANIFEST C:\Users\akkiirah\.glzr\zebar\tmp-QzpcVXNlcnNcYWtraWlyYWhcLmdsenJcemViYXJcdHJhbnNwYXJlbnQ=\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
-2025/03/08-01:58:13.474 196c Recovering log #3
-2025/03/08-01:58:13.474 196c Reusing old log C:\Users\akkiirah\.glzr\zebar\tmp-QzpcVXNlcnNcYWtraWlyYWhcLmdsenJcemViYXJcdHJhbnNwYXJlbnQ=\EBWebView\Default\Sync Data\LevelDB/000003.log 
+2025/03/08-02:14:08.866 3ac0 Creating DB C:\Users\akkiirah\.glzr\zebar\tmp-QzpcVXNlcnNcYWtraWlyYWhcLmdsenJcemViYXJcdHJhbnNwYXJlbnQ=\EBWebView\Default\Sync Data\LevelDB since it was missing.
+2025/03/08-02:14:08.876 3ac0 Reusing MANIFEST C:\Users\akkiirah\.glzr\zebar\tmp-QzpcVXNlcnNcYWtraWlyYWhcLmdsenJcemViYXJcdHJhbnNwYXJlbnQ=\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
